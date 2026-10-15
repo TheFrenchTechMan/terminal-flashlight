@@ -7,5 +7,6 @@ TERM_HEIGHT = TERM_SIZE[1]
 
 FULL_CHAR = "█"
 
-stdout.write(f"\033[0;97m{'\n'.join([FULL_CHAR * TERM_WIDTH for i in range(TERM_HEIGHT)])}\033[0m")
+lines = "\n".join([FULL_CHAR * TERM_WIDTH for i in range(TERM_HEIGHT)])
+stdout.write(f"\033[0;97m{lines}\033[0m")
 input()
